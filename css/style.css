@@ -1,0 +1,7 @@
+/* line 2, ../sass/style.sass */
+.item {
+  width: 50px;
+  padding: 20px;
+  color: black;
+  border: 1px solid black;
+}
