@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link href='qhttp://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/screen.css">
 </head>
 <body>
-	<header class="lending">
-		<div class="lending_layout">
-			<div class="lending_logo"></div>
-			<p class="lending_text">A great new free psd theme to showcase your new application. </p>
+	<header class="hero">
+		<div class="hero__in">
+			<div class="hero__logo"></div>
+			<p class="hero__text">A great new free psd theme to showcase your new application. </p>
 			<nav class="nav">
-				<ul>
-					<li><i class="icon-aplle"></i></li>
+				<ul class="nav_device">
+					<li><i class="icon-apple">&nbsp;</i></li>
 					<li><i class="icon-android"></i></li>
 					<li><i class="icon-windows"></i></li>
 				</ul>
@@ -20,35 +22,40 @@
 	</header>
 	<!-- begin feauters -->
 	<section class="feauters">
-		<div class="layout">
-			<div class="l-1-3">
-				<div class="feauters_icon"><i class="icon-settings"></i></div>
-				<h3 class="feauters_h">Editable Theme</h3>
-				<p class="feauters_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iste in ad dolor cupiditate rem, magni error aperiam mollitia distinctio laudantium libero perferendis enim aliquid architecto iure. Minima alias, fuga.</p>
+		<div class="l">
+			<div class="feauter l-col1">
+				<i class="icon-editable"></i>
+				<h3 class="feauter__h">Editable Theme</h3>
+				<p class="feauter__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iste in ad dolor cupiditate rem.</p>
 			</div>
-			<div class="l-1-3">
-				<div class="feauters_icon"><i class="icon-star"></i></div>
-				<h3 class="feauters_h">Flat Design</h3>
-				<p class="feauters_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos officiis beatae nostrum reprehenderit rem mollitia, quas incidunt tenetur doloribus magnam placeat quia laudantium sint. Dignissimos iusto dolorem vel perferendis.</p>
+			<div class="feauter l-col1">
+				<i class="icon-flat"></i>
+				<h3 class="feauter__h">Flat Design</h3>
+				<p class="feauter__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eos officiis beatae nostrum.</p>
 			</div>
-			<div class="l-1-3">
-				<div class="feauters_icon"><i class="icon-earth"></i></div>
-				<h3 class="feauters_h">Reach Your Audience</h3>
-				<p class="feauters_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas esse quisquam nostrum inventore quidem similique beatae veniam debitis ipsam consequuntur eligendi, blanditiis id fugiat ea earum eius voluptatem hic quo!</p>
+			<div class="feauter l-col1">
+				<i class="icon-earth"></i>
+				<h3 class="feauter__h">Reach Your Audience</h3>
+				<p class="feauter__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas esse quisquam nostrum inventore!</p>
 			</div>
 		</div>
 	</section>
 	<!-- end feauters -->
 	<!-- begin notify -->
 	<section class="notify">
-		<div class="layout">
-			<div class="l-1-2">
-				<h3 class="notify_h">Get Notified Of Any Updates!</h3>
-				<p class="notify_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque natus labore debitis excepturi dolorum iure rerum, atque, ab repudiandae. Laudantium amet magni nobis similique, distinctio sunt. In, enim, alias.</p>
-				.group<input type="email" class="input_email" placeholder="Email Address"><button type="button">Notify</button>
+		<div class="l">
+			<div class="l-col2">
+				<h3 class="notify__h">Get Notified Of Any Updates!</h3>
+				<p class="notify__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque natus labore debitis excepturi dolorum iure rerum, atque, ab repudiandae. Laudantium amet magni nobis similique, distinctio sunt. In, enim, alias.</p>
+				<div class="input_group">
+				    <input type="email" class="input_email" placeholder="Email Address">
+				    <span class="input-btn">
+				        <button type="button" class="btn">Notify</button>
+				    </span>
+				</div>
 			</div>
-			<div class="l-1-2">
-				<video controls poster="">
+			<div class="l-col2 align-right">
+				<video class controls poster="img/cover.png">
 					<source src=""></source>
 				</video>
 			</div>
@@ -70,5 +77,20 @@
 			</ul>
 		</div>
 	</section>
+	<!-- begin footer -->
+	<footer class="footer">
+	    <div class="footer__in">
+	        <nav class="nav">
+	            <ul>
+	                <li><a href="">Contact</a></li>
+	                <li><a href="">Download</a></li>
+	                <li><a href="">Press</a></li>
+	                <li><a href="">Email</a></li>
+	                <li><a href="">Support</a></li>
+	                <li><a href="">Privacy Policy</a></li>
+	            </ul>
+	        </nav>
+	    </div>
+	</footer>
 </body>
 </html>

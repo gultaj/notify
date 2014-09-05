@@ -1,0 +1,77 @@
+%in
+    width: 1050px
+    margin: 0 auto
+
+%icon
+    position: relative
+    vertical-align: middle
+    display: inline-block
+
+
+
+.hero
+    border-top: 10px solid #2dcb71
+    background: url(../img/lighting.png) no-repeat
+    background-position: center top
+    height: 600px
+    color: #fff
+    &__in
+        @extend %in
+        padding-top: 145px
+        padding-left: 105px
+        .hero__logo
+            +s(logo)
+        .hero__text
+            font-size: 22px
+            width: 450px
+            margin-top: 30px
+            font-weight: 600
+
+
+
+.feauters
+    text-align: center
+    padding: 55px 0
+    .feauter
+        [class*="icon-"]
+            @extend %icon
+            width: 98px
+            height: 98px
+        +make-icon(editable)
+        +make-icon(flat)
+        +make-icon(earth)
+
+        &__h
+            margin: 30px auto
+            color: #212121
+            font-size: 1.3em
+
+
+.notify
+    background: #e3e3e3
+    padding: 55px 0
+    &__h
+        margin-bottom: 20px
+        color: #212121
+        font-size: 1.3em
+    &__text
+        margin-bottom: 20px
+
+.nav
+    li
+        display: inline-block
+    &_device
+        margin-top: 20px
+        [class*="icon-"]
+            @extend %icon
+            width: 53px
+            height: 53px
+            margin-right: 10px
+            &:hover
+                cursor: pointer
+        +make-icon-h(apple)
+        +make-icon-h(windows)
+        +make-icon-h(android)
+
+.align-right
+    text-align: right
