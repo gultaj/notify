@@ -12,8 +12,7 @@
 .hero
     border-top: 10px solid #2dcb71
     background: url(../img/lighting.png) no-repeat
-    background-position: center top
-    height: 600px
+    height: 545px
     color: #fff
     &__in
         @extend %in
@@ -57,6 +56,44 @@
     &__text
         margin-bottom: 20px
 
+.review
+    text-align: center
+    &__in
+        @extend %in
+        margin-top: 55px
+        margin-bottom: 55px
+    blockquote
+
+    &__text
+        blockqoute &
+            font-style: italic
+        margin-bottom: 25px
+        padding-left: 170px
+        padding-right: 170px
+        color: #838383
+    &__author
+        color: #2d2d2d
+        fint-weight: bold
+        font-size: 1.1em
+
+.footer
+    background: #e3e3e3
+    padding: 55px 0
+    text-align: center
+    &__in
+        @extend %in
+
+.social
+    a
+        width: 34px
+        height: 34px
+    +make-icon(twitter)
+    +make-icon(facebook)
+    +make-icon(pinterest)
+    +make-icon(googleplus)
+    +make-icon(linkedin)
+    +make-icon(youtube)
+
 .nav
     li
         display: inline-block
@@ -72,6 +109,11 @@
         +make-icon-h(apple)
         +make-icon-h(windows)
         +make-icon-h(android)
+    &_footer li
+        padding: 0 10px
+        font-weight: 600
+        &:hover a
+
 
 .align-right
     text-align: right
