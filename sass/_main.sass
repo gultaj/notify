@@ -6,6 +6,7 @@
     position: relative
     vertical-align: middle
     display: inline-block
+    +sprite-bkg()
 
 
 
@@ -62,12 +63,10 @@
         @extend %in
         margin-top: 55px
         margin-bottom: 55px
-    blockquote
-
     &__text
         blockqoute &
             font-style: italic
-        margin-bottom: 25px
+        margin-bottom: 20px
         padding-left: 170px
         padding-right: 170px
         color: #838383
@@ -75,6 +74,21 @@
         color: #2d2d2d
         fint-weight: bold
         font-size: 1.1em
+        margin-bottom: 20px
+    &__h
+        color: #212121
+        margin-top: 35px
+    &__list
+        li
+            display: inline-block
+            background: #2dcb71
+            width: 45px
+            height: 45px
+            img
+                width: 100%
+                &:hover
+                    opacity: .5
+                    cursor: pointer
 
 .footer
     background: #e3e3e3
@@ -84,15 +98,18 @@
         @extend %in
 
 .social
-    a
+    [class*="icon-"]
+        @extend %icon
+        display: inline-block
         width: 34px
         height: 34px
-    +make-icon(twitter)
-    +make-icon(facebook)
-    +make-icon(pinterest)
-    +make-icon(googleplus)
-    +make-icon(linkedin)
-    +make-icon(youtube)
+        margin: 0 5px
+    +make-icon-h(twitter)
+    +make-icon-h(facebook)
+    +make-icon-h(pinterest)
+    +make-icon-h(googleplus)
+    +make-icon-h(linkedin)
+    +make-icon-h(youtube)
 
 .nav
     li
@@ -112,8 +129,6 @@
     &_footer li
         padding: 0 10px
         font-weight: 600
-        &:hover a
-
 
 .align-right
     text-align: right
