@@ -1,6 +1,4 @@
 /* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-.icons-sprite { background-image: url('../img/icons-se1ad2115dd.png'); background-repeat: no-repeat; }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
 body, html { height: 100%; }
@@ -38,11 +36,11 @@ video { width: auto; height: 269px; -moz-border-radius: 7px; -webkit-border-radi
 
 .hero__in, .review__in, .footer__in, .l { width: 1050px; margin: 0 auto; }
 
-.feauters .feauter [class*="icon-"], .social [class*="icon-"], .nav_device [class*="icon-"] { position: relative; vertical-align: middle; display: inline-block; background: url('../img/icons-s21facdc45b.png') no-repeat; }
+.feauters .feauter [class*="icon-"], .social [class*="icon-"], .nav_device [class*="icon-"] { position: relative; vertical-align: middle; display: inline-block; background: url('../img/sprite-icons.png') no-repeat; }
 
 .hero { border-top: 10px solid #2dcb71; background: url(../img/lighting.png) no-repeat; height: 545px; color: #fff; }
 .hero__in { padding-top: 145px; padding-left: 105px; }
-.hero__in .hero__logo { background: url('../img/icons-s21facdc45b.png') 0 -840px no-repeat; width: 183px; height: 83px; }
+.hero__in .hero__logo { background: url('../img/sprite-icons.png') 0 -840px; width: 183px; height: 83px; }
 .hero__in .hero__text { font-size: 22px; width: 450px; margin-top: 30px; font-weight: 600; }
 
 .feauters { text-align: center; padding: 55px 0; }
@@ -62,7 +60,10 @@ video { width: auto; height: 269px; -moz-border-radius: 7px; -webkit-border-radi
 blockqoute .review__text { font-style: italic; }
 .review__author { color: #2d2d2d; fint-weight: bold; font-size: 1.1em; margin-bottom: 20px; }
 .review__h { color: #212121; margin-top: 35px; }
-.review__list li { display: inline-block; background: #2dcb71; width: 45px; height: 45px; }
+.review__list .fade { position: absolute; top: 0; width: 45px; height: 45px; }
+.review__list .fade_left { left: 0; background: linear-gradient(to right, #ffffff 20%, rgba(0, 0, 0, 0) 100%); }
+.review__list .fade_right { right: 0; background: linear-gradient(to left, #ffffff 20%, rgba(0, 0, 0, 0) 100%); }
+.review__list li { position: relative; display: inline-block; background: #2dcb71; width: 45px; height: 45px; }
 .review__list li img { width: 100%; }
 .review__list li img:hover { opacity: 0.5; cursor: pointer; }
 

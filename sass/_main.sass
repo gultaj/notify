@@ -79,10 +79,22 @@
         color: #212121
         margin-top: 35px
     &__list
+        .fade
+            position: absolute
+            top: 0
+            width: 45px
+            height: 45px
+            &_left
+                left: 0
+                background: linear-gradient(to right, rgba(255,255,255,1) 20%,rgba(0,0,0,0) 100%)
+            &_right
+                right: 0
+                background: linear-gradient(to left, rgba(255,255,255,1) 20%,rgba(0,0,0,0) 100%)
         li
+            position: relative
             display: inline-block
             background: #2dcb71
-            width: 45px
+            width: 45px 
             height: 45px
             img
                 width: 100%
@@ -129,6 +141,8 @@
     &_footer li
         padding: 0 10px
         font-weight: 600
+
+
 
 .align-right
     text-align: right

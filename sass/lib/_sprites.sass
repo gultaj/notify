@@ -1,6 +1,5 @@
 //  sprites with padding
 $icons: sprite-map("icons/*.png", $spacing: 10px)
-@import "icons/*.png"
 // sized sprites
 =image-size($path)
     width: image-width($path)
@@ -12,7 +11,7 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 
 //shortcut
 =s($sprite, $map: $icons)
-    background: sprite($map, $sprite) no-repeat
+    background: sprite($map, $sprite)
     //background-image: inline-image('icons/'+$sprite+'.png','image/png') to switches sprites to base64, elegant
     +image-size(sprite-file($map, $sprite))
 
